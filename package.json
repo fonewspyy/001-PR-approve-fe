@@ -1,0 +1,27 @@
+{
+  "name": "pr_approve",
+  "version": "0.1.0",
+  "private": true,
+  "//": "start = UAT (ชั่วคราว 2026-10-09): port 4101 + API_ENV=test = 8Bit UAT 7172 (set ทับ .env.production ที่เป็น prd) · ถ้าขึ้น PRD (ตัวจริง) ต้องเปลี่ยนเป็น next start --port 3101 (เอา set ออก) · dev ในเครื่องยังเป็น 3101",
+  "scripts": {
+    "dev": "next dev --port 3101",
+    "build": "next build",
+    "start": "set API_ENV=test&& next start --port 4101",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
